@@ -44,16 +44,17 @@
       
    
       <main>
+        <div v-if="loggedIn === false">
            <!--Login Form-->
            <div class="parent-login-div">
 
             <div class="toggle-authentication">
-                <button> Login </button>
+                <button v-on:click="toggleLogin"> Login </button>
 
-                <button> Sign Up</button>
+                <button v-on:click="toggleSignup"> Register </button>
 
             </div>
-
+        <!-- LOGIN -->
            <div class="login-div" v-if="accountCreated && register === false">
         <form>
             <div class="form-group">
@@ -65,15 +66,50 @@
               <label for="exampleInputPassword1">Password</label>
               <input type="password" class="form-control" id="exampleInputPassword1">
             </div>
-            <div class="form-group form-check">
-              <input type="checkbox" class="form-check-input" id="exampleCheck1">
-              <label class="form-check-label" for="exampleCheck1">Check me out</label>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <!-- <div class="form-group form-check">
+            </div> -->
+            <button type="submit" class="btn btn-primary" v-on:click="handleLogin">Log in</button>
           </form>
         </div>
+        <!-- LOGIN -->
+
+        <!-- SIGN UP -->
+        <div class="signup-div" v-if="register && accountCreated === false">
+         
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Enter Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Enter Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <!-- <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            </div> -->
+            <button type="submit" class="btn btn-primary" v-on:click="handleLogin">Create Account</button>
+          </form>
+
+        </div>
+        <!-- SIGN UP -->
+
+
+
+
     </div>
-            <!--Login Form-->
+   
+  </div>
+            <!--End of Login Form-->
+
+            <!-- CONTENT -->
+  <div v-if="loggedIn">
+    
+    <h1>loggedin!!!!!!</h1>
+
+  </div>
+            <!-- CONTENT -->
 
       </main>
 

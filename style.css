@@ -7,10 +7,10 @@
     flex-direction: column;
 }
 
-.toggle-authentication, .login-div{
+.toggle-authentication, .login-div, .signup-div{
     align-self: center;
 }
 
-.login-div{
+.login-div, .signup-div{
     width: 50%;
 }

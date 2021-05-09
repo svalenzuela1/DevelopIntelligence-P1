@@ -4,6 +4,22 @@ const app = new Vue({
     data: {
         accountCreated: true,
         register: false,
+        loggedIn: false,
     },
-    methods: {}
+    methods: {
+        toggleLogin: function(){
+            this.accountCreated = true
+            this.register = false
+        },
+        toggleSignup: function(){
+            this.accountCreated = false
+            this.register = true
+        },
+        handleLogin: function(){
+            this.loggedIn = true
+        },
+        handleLogout: function(){
+            this.loggedIn = false
+        }
+    }
 })
