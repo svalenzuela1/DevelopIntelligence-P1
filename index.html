@@ -26,12 +26,13 @@
 <body>
     <div id="app">
     <!-- NAVBAR -->
-    <header id="navbar">
+    <header id="navbar"  v-if="loggedIn">
     <div class="fixed-top">
         <div class="collapse" id="navbarToggleExternalContent">
           <div class="bg-dark p-4">
-            <h5 class="text-white h4">Collapsed content</h5>
-            <span class="text-muted">Toggleable via the navbar brand.</span>
+            <div v-if="loggedIn">
+            <button v-on:click="handleLogout">Log out</button>
+            </div>
           </div>
         </div>
         <nav class="navbar navbar-dark bg-dark">
@@ -49,9 +50,9 @@
            <div class="parent-login-div">
 
             <div class="toggle-authentication">
-                <button v-on:click="toggleLogin" class="btn btn-dark btn-outline-light"> Login </button>
+                <button v-on:click="toggleLogin" class="btn btn-dark btn-outline-light btn-active" id="toggle-login-form-button"> Login </button>
 
-                <button v-on:click="toggleSignup" class="btn btn-dark btn-outline-light"> Register </button>
+                <button v-on:click="toggleSignup" class="btn btn-dark btn-outline-light btn-active" id="toggle-signup-form-button"> Register </button>
 
             </div>
         <!-- LOGIN -->
@@ -70,7 +71,12 @@
             </div>
             <!-- <div class="form-group form-check">
             </div> -->
-            <button type="submit" class="btn btn-primary" v-on:click="handleLogin">Log in</button>
+            <button type="submit" class="btn btn-primary" v-on:click="handleLogin">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="20" fill="currentColor" class="bi bi-door-open-fill" viewBox="0 0 16 16">
+                <path d="M1.5 15a.5.5 0 0 0 0 1h13a.5.5 0 0 0 0-1H13V2.5A1.5 1.5 0 0 0 11.5 1H11V.5a.5.5 0 0 0-.57-.495l-7 1A.5.5 0 0 0 3 1.5V15H1.5zM11 2h.5a.5.5 0 0 1 .5.5V15h-1V2zm-2.5 8c-.276 0-.5-.448-.5-1s.224-1 .5-1 .5.448.5 1-.224 1-.5 1z"/>
+              </svg>
+              Log in
+            </button>
           </form>
         </div>
         <!-- LOGIN -->
@@ -80,20 +86,21 @@
          
           <form>
             <div class="form-group">
-              <label for="exampleInputEmail1">Enter Email address</label>
+              <label for="exampleInputEmail1">Email address</label>
               <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+              <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
             </div>
 
-            <div>
+            <div class="form-group">
               <label for="Username">Username</label>
               <input type="text" class="form-control" id="username">
             </div>
             
             <div class="form-group">
-              <label for="exampleInputPassword1">Enter Password</label>
+              <label for="exampleInputPassword1">Password</label>
               <input type="password" class="form-control" id="exampleInputPassword1">
             </div>
+
             <!-- <div class="form-group form-check">
               <input type="checkbox" class="form-check-input" id="exampleCheck1">
             </div> -->

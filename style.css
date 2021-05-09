@@ -4,6 +4,10 @@
 .parent-login-div{
     display: flex;
     flex-direction: column;
+
+    /* Take Out if Navbar stays on login screen */
+    margin-top: 10%;
+    /* Take Out if Navbar stays on login screen */
 }
 
 .toggle-authentication, .login-div, .signup-div{
@@ -12,4 +16,13 @@
 
 .login-div, .signup-div{
     width: 50%;
+}
+
+.btn-active:active{
+    background-color: white;
+    color: black;
+}
+input > .parent-login-div{
+    background: transparent;
+    border: none;
 }
