@@ -3,6 +3,7 @@ const app = new Vue({
     el: "#app",
     data: {
         accountCreated: true,
+        register: false,
     },
     methods: {}
 })

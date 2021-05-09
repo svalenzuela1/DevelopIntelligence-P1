@@ -1,10 +1,16 @@
+#navbar{
+    padding-bottom: 10%;
+}
 .parent-login-div{
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
+    flex-direction: column;
+}
+
+.toggle-authentication, .login-div{
+    align-self: center;
 }
 
 .login-div{
-    padding-top: 10%;
     width: 50%;
-   
 }
