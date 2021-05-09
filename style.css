@@ -15,7 +15,8 @@
 }
 
 .login-div, .signup-div{
-    width: 50%;
+    width: 40%;
+    padding: 3%;
 }
 
 .btn-active:active{
