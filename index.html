@@ -18,6 +18,9 @@
 
       <!-- EXTERNAL CSS LINK -->
     <link rel="stylesheet" href="style.css" />
+
+    <!-- JS -->
+    <script src="app.js" defer></script>
 </head>
 <body>
     <div id="app">
@@ -42,8 +45,11 @@
       <main>
            <!--Login Form-->
            <div class="parent-login-div">
-               
-           <div class="login-div">
+
+            <div>
+
+            </div>
+           <div class="login-div" v-if="accountCreated === true">
         <form>
             <div class="form-group">
               <label for="exampleInputEmail1">Email address</label>
