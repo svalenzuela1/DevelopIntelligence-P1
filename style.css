@@ -1,4 +1,10 @@
+.parent-login-div{
+    display: flex;
+    justify-content: center;
+}
+
 .login-div{
     padding-top: 10%;
     width: 50%;
+   
 }
