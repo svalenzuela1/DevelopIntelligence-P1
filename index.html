@@ -175,11 +175,24 @@
             <!-- CONTENT -->
   <div v-if="loggedIn" class="container-fluid">
     <div class="row m-5">
-    <div v-for="product in products" class="col-m p-2">
+    <!-- <div v-for="product in products" class="col-m p-2">
       <img :src="product.image" class="product-images" height="150" width="150">
       <h6>{{product.name}}</h6>
       <p><small>{{product.price}}</small></p>
+    </div> -->
+
+    <!-- CARD -->
+    <div v-for="product in products" class="col-m p-2">
+    <div class="card" style="width: 18rem;" v0>
+      <img :src="product.image" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">{{product.name}}</h5>
+        <p class="card-text">{{product.price}}</p>
+        <a href="#" class="btn btn-beige">Add to cart</a>
+      </div>
     </div>
+  </div>
+    <!-- CARD -->
   </div>
   </div>
 

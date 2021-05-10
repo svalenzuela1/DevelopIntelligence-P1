@@ -32,6 +32,11 @@
     background-color: #6B8264;
 }
 
+.btn-beige{
+    background-color: #6c595b;
+    color: white;
+}
+
 input > .parent-login-div{
     background: transparent;
     border: none;
