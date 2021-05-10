@@ -23,6 +23,10 @@
     border-radius: 5px;
 }
 
+.bg-peach{
+    background-color: #E4D1BA;
+}
+
 .btn-active:active{
     background-color: white;
     color: black;
@@ -32,11 +36,20 @@
     background-color: #6B8264;
 }
 
+.btn-olive{
+    background-color: #6B8371;
+    color: white;
+}
+
 .btn-beige{
     background-color: #6c595b;
     color: white;
 }
 
+.btn-dark-purple{
+    background-color: #2D262E;
+    color: white;
+}
 input > .parent-login-div{
     background: transparent;
     border: none;
