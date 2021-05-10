@@ -1,6 +1,9 @@
+
+
 #navbar{
     padding-bottom: 12%;
 }
+
 .parent-login-div{
     display: flex;
     flex-direction: column;
@@ -17,6 +20,7 @@
 .login-div, .signup-div{
     width: 40%;
     padding: 3%;
+    border-radius: 5px;
 }
 
 .btn-active:active{
