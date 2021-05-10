@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="bg-dark">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -23,7 +23,7 @@
     <script src="app.js" defer></script>
 </head>
 
-<body>
+<body class="bg-dark">
     <div id="app">
     <!-- NAVBAR -->
     <header id="navbar" v-if="loggedIn">
@@ -175,8 +175,9 @@
             <!-- CONTENT -->
   <div v-if="loggedIn">
     
-    <h1>loggedin!!!!!!</h1>
-
+    <div v-for="product in products">
+      <img :src="product.image">
+    </div>
   </div>
             <!-- CONTENT -->
 
