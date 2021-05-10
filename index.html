@@ -173,11 +173,16 @@
             <!--End of Login Form-->
 
             <!-- CONTENT -->
-  <div v-if="loggedIn">
-    
-    <div v-for="product in products">
-      <img :src="product.image">
+  <div v-if="loggedIn" class="container-fluid">
+    <div class="row m-5">
+    <div v-for="product in products" class="col-m p-2">
+      <img :src="product.image" class="product-images" height="150" width="150">
+      <h6>{{product.name}}</h6>
+      <p><small>{{product.price}}</small></p>
     </div>
+  </div>
+  </div>
+
   </div>
             <!-- CONTENT -->
 

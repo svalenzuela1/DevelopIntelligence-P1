@@ -36,3 +36,19 @@ input > .parent-login-div{
     background: transparent;
     border: none;
 }
+
+/* .product-images-div{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.child-of-product-div{
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.product-images{
+    height: 50%;
+    width: 50%;
+} */
