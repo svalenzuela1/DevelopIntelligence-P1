@@ -71,8 +71,13 @@
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      <!-- <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"> -->
+      <button class="btn btn-dark" type="submit" v-on:click="handleLogout">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-door-closed" viewBox="0 0 16 16">
+        <path d="M3 2a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v13h1.5a.5.5 0 0 1 0 1h-13a.5.5 0 0 1 0-1H3V2zm1 13h8V2H4v13z"/>
+        <path d="M9 9a1 1 0 1 0 2 0 1 1 0 0 0-2 0z"/>
+        </svg>
+      Log Out</button>
     </form>
   </div>
 </nav>
@@ -225,7 +230,7 @@
       <div class="card-body">
         <h5 class="card-title">{{product.name}}</h5>
         <p class="card-text">{{product.price}}</p>
-        <a href="#" class="btn btn-dark-purple">Add to cart</a>
+        <a href="#" class="btn btn-olive">Add to cart</a>
       </div>
     </div>
   </div>
