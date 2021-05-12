@@ -41,6 +41,11 @@
     background-color: #406960;
 }
 
+.btn-shadow{
+    box-shadow: 0 8px 6px -6px black;
+    border-radius: 3px;
+}
+
 .btn-active:active{
     background-color: white;
     color: black;
