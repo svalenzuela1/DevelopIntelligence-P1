@@ -1,4 +1,5 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&display=swap');
 
 #navbar{
     padding-bottom: 12%;
@@ -69,23 +70,22 @@
     background-color: #2D262E;
     color: white;
 }
-input > .parent-login-div{
+
+.contact-font{
+    color: white;
+    /* opacity: 0.5; */
+    font-family: merriweather;
+}
+
+.contact-input{
     background: transparent;
     border: none;
+    border-bottom: solid #ffff 2px;
 }
 
-/* .product-images-div{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    flex-wrap: wrap;
+.btn-nike{
+    background-color: white;
+    color: black;
+    font-family: merriweather;
+    font-weight: 100;
 }
-
-.child-of-product-div{
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-.product-images{
-    height: 50%;
-    width: 50%;
-} */
