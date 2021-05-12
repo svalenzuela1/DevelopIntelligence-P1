@@ -23,8 +23,9 @@
     <script src="app.js" defer></script>
 </head>
 <body class="bg-dark">
-     <!-- NAVBAR -->
-     <header id="navbar" v-if="loggedIn">
+    <!-- <div id="app"> -->
+    <!-- NAVBAR -->
+    <header id="navbar" v-if="loggedIn">
         <div class="fixed-top">
             <nav class="navbar navbar-expand-lg navbar-light bg-white">
               <!-- LOGO -->
@@ -64,11 +65,73 @@
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-door-closed" viewBox="0 0 16 16">
             <path d="M3 2a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v13h1.5a.5.5 0 0 1 0 1h-13a.5.5 0 0 1 0-1H3V2zm1 13h8V2H4v13z"/>
             <path d="M9 9a1 1 0 1 0 2 0 1 1 0 0 0-2 0z"/>
-            </svg>
+            </svg>  
           Log Out</button>
         </form>
     <!-- Right Side of Navbar -->
+    
+      </div>
+    </nav>
+          </div>
+        </header>
+        <!-- END OF NAVBAR -->
+<!-- </div> -->
 
+<!-- CONTACT -->
+<main>
+    <div class="d-flex justify-content-center align-items-center container">
+    <div class="text-center w-50">
+    <form class="">
+        <div class="form-row">
+          <div class="col-md-6 mb-3">
+            <label for="validationCustom01">First name</label>
+            <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="validationCustom02">Last name</label>
+            <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="col-md-6 mb-3">
+            <label for="validationCustom03">City</label>
+            <input type="text" class="form-control" id="validationCustom03" required>
+            <div class="invalid-feedback">
+              Please provide a valid city.
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="validationCustom04">State</label>
+            <select class="custom-select" id="validationCustom04" required>
+              <option selected disabled value="">Choose...</option>
+              <option>...</option>
+            </select>
+            <div class="invalid-feedback">
+              Please select a valid state.
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="validationCustom05">Zip</label>
+            <input type="text" class="form-control" id="validationCustom05" required>
+            <div class="invalid-feedback">
+              Please provide a valid zip.
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+            <button class="btn btn-primary" type="submit">Submit form</button>
+        </div>
+      </form>
+    </div>
+</div>
+</main>
+<!-- CONTACT -->
 
     <!-- Bootstrap script files go to the bottom of the body -->
     <script
