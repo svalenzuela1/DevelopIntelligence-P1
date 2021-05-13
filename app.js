@@ -5,8 +5,9 @@ const app = new Vue({
         accountCreated: true,
         register: false,
         loggedIn: true,
-        productsPage: false,
         homePage: true,
+        productsPage: false,
+        contactPage: false,
         products: [
             {image: 'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/860d2c2d-ee3a-4316-b2a4-bb1bb5488eda/icon-clash-city-sleek-womens-running-tank-s9XV8p.png', name:'Nike Running Tank', price: 55},
             {image: 'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/1df2599d-0689-47d3-afbd-629f4461685a/sportswear-womens-boxy-t-shirt-cPPsNj.png', name:'Nike Boxy T-Shirt', price: 35},
@@ -33,6 +34,21 @@ const app = new Vue({
         },
         handleLogout: function(){
             this.loggedIn = false
+        },
+        toggleHome: function(){
+            this.homePage = true
+            this.productsPage = false
+            this.contactPage = false
+        },
+        toggleProducts: function(){
+            this.homePage = false
+            this.productsPage = true
+            this.contactPage = false
+        }, 
+        toggleContact: function(){
+            this.homePage = false
+            this.productsPage = false
+            this.contactPage = true
         }
     }
 })
