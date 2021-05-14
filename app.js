@@ -21,6 +21,12 @@ const app = new Vue({
             {image: 'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/d3e31313-ad9a-444a-93a7-139bb0b90a41/sportswear-womens-t-shirt-rQxr1q.png', name: 'Nike Sports Wear', price: 40},
             {image: 'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/274e2bb9-6dc1-49f5-88c0-88f1ba983e20/city-sleek-womens-trail-running-tank-5kL8Pk.png', name: 'Nike Trail Running Tank', price: 25},
             {image: 'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/i1-fbfd98e4-2b03-49c1-9da8-0d5b97cb06c9/sportswear-womens-muscle-tank-QF3zD8.png', name: 'Nike Muscle Tank', price: 30}
+        ],
+        shoes: [
+            {image: 'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/63f3f41b-20e5-4ba6-8598-7301ed4897b2/air-zoom-pegasus-38-womens-running-shoe-2bvJvW.png', name: 'Nike Air Zoom Pegasus', price: 160},
+            {image: 'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/752b1153-48d6-4926-802f-85a12769faba/zoomx-invincible-run-flyknit-womens-running-shoe-BswZG0.png', name: 'Nike ZoomX Invincible Run', price: 180},
+            {image: 'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/d45c6026-5f5f-4b74-869b-50429f90489b/react-escape-run-womens-running-shoe-LP3Msz.png', name: 'Nike React Escape Run', price: 275},
+            {image: 'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/4f0f36fa-0493-4a24-af2b-4c5d2ea001a0/nikecourt-air-max-volley-womens-hard-court-tennis-shoe-RzhPd3.png', name: 'Nike Air Max Volley', price: 90}
         ]
     },
     methods: {

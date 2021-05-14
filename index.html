@@ -55,7 +55,7 @@
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <a class="dropdown-item" href="#" v-on:click="toggleProducts">All</a>
                   <a class="dropdown-item" href="#shirts">T-Shirts</a>
-                  <a class="dropdown-item" href="#">Shoes</a>
+                  <a class="dropdown-item" href="#shoes">Shoes</a>
                   <div class="dropdown-divider"></div>
                   <a class="dropdown-item" href="#" type="button" data-toggle="modal" data-target="#exampleModal">Sizing
                     Chart</a>
@@ -181,7 +181,7 @@
           <!-- LOGIN -->
           <div class="login-div bg-white" v-if="accountCreated && register === false">
             <form>
-           
+
               <div class="input-group mb-3">
 
                 <div class="input-group-prepend">
@@ -197,7 +197,7 @@
                 <input type="text" placeholder="Username" class="form-control" id="username">
               </div>
 
-              
+
 
               <div class="input-group mb-3 ">
                 <div class="input-group-prepend">
@@ -228,7 +228,7 @@
           <!-- LOGIN -->
 
 
-<!-- --------------------------------------------------------------------------- -->
+          <!-- --------------------------------------------------------------------------- -->
 
 
           <!-- SIGN UP -->
@@ -304,9 +304,9 @@
 
           </div>
           <!-- SIGN UP -->
-          
+
         </div>
-<!-- --------------------------------------------------------------------------- -->
+        <!-- --------------------------------------------------------------------------- -->
       </div>
       <!--End of Login Form-->
 
@@ -318,47 +318,25 @@
 
         <!-- HOME PAGE -->
         <div v-if="homePage && productsPage === false && contactPage === false">
-          <!-- 
-          <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="https://static.nike.com/a/images/w_960,c_limit/328152c6-9d5b-4530-b127-99154766e448/image.jpg"
-                  class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/64f1ec0e-a79b-4ec4-a0c1-73d6c5a30665/sportswear-womens-washed-pants-zWTzqm.png"
-                  class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/e4a840a6-047b-44d2-8537-b6abe4199a2a/sportswear-swoosh-womens-woven-jacket-1b4wg6.png"
-                  class="d-block w-100" alt="...">
-              </div>
-            </div>
-            <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
-          </div>-->
+
           <div class="container-fluid">
             <div class="column text-center">
-                <div class="row justify-content-center">
-                  <img src="https://media4.giphy.com/media/3o6ZtlMjQF8VgzHyXm/200w.webp?cid=ecf05e47if00cdnlhiotcirx59rxtgjchwtvmbyaxbhncb6s&rid=200w.webp&ct=g">
-                  <img src="https://media2.giphy.com/media/3o6Ztqh4JSlVqi2Z20/200w.webp?cid=ecf05e47if00cdnlhiotcirx59rxtgjchwtvmbyaxbhncb6s&rid=200w.webp&ct=g">
-                  <img src="https://media3.giphy.com/media/l0HluZItcJ8oIWb5K/200w.webp?cid=ecf05e47if00cdnlhiotcirx59rxtgjchwtvmbyaxbhncb6s&rid=200w.webp&ct=g">
-                  <img src="https://media4.giphy.com/media/3o7TKPVo3SMEMMwISY/200w.webp?cid=ecf05e47if00cdnlhiotcirx59rxtgjchwtvmbyaxbhncb6s&rid=200w.webp&ct=g">
-                  <img src="https://media2.giphy.com/media/l46CB8sOqviosBsgo/200w.webp?cid=ecf05e47if00cdnlhiotcirx59rxtgjchwtvmbyaxbhncb6s&rid=200w.webp&ct=g">
-                  <img src="https://media3.giphy.com/media/3o6Zt4F6t6Sm1cmcus/200w.webp?cid=ecf05e47if00cdnlhiotcirx59rxtgjchwtvmbyaxbhncb6s&rid=200w.webp&ct=g">  
+              <div class="row justify-content-center">
+                <img
+                  src="https://media4.giphy.com/media/3o6ZtlMjQF8VgzHyXm/200w.webp?cid=ecf05e47if00cdnlhiotcirx59rxtgjchwtvmbyaxbhncb6s&rid=200w.webp&ct=g">
+                <img
+                  src="https://media2.giphy.com/media/3o6Ztqh4JSlVqi2Z20/200w.webp?cid=ecf05e47if00cdnlhiotcirx59rxtgjchwtvmbyaxbhncb6s&rid=200w.webp&ct=g">
+                <img
+                  src="https://media3.giphy.com/media/l0HluZItcJ8oIWb5K/200w.webp?cid=ecf05e47if00cdnlhiotcirx59rxtgjchwtvmbyaxbhncb6s&rid=200w.webp&ct=g">
+                <img
+                  src="https://media4.giphy.com/media/3o7TKPVo3SMEMMwISY/200w.webp?cid=ecf05e47if00cdnlhiotcirx59rxtgjchwtvmbyaxbhncb6s&rid=200w.webp&ct=g">
+                <img
+                  src="https://media2.giphy.com/media/l46CB8sOqviosBsgo/200w.webp?cid=ecf05e47if00cdnlhiotcirx59rxtgjchwtvmbyaxbhncb6s&rid=200w.webp&ct=g">
+                <img
+                  src="https://media3.giphy.com/media/3o6Zt4F6t6Sm1cmcus/200w.webp?cid=ecf05e47if00cdnlhiotcirx59rxtgjchwtvmbyaxbhncb6s&rid=200w.webp&ct=g">
               </div>
-                <!-- <div class="col">
-                    <img src="jasmine-sanders.jpeg" class="img-fluid">
-                </div> -->
-               
+
+
             </div>
           </div>
 
@@ -387,7 +365,7 @@
             </div>
 
           </div>
-        </div> 
+        </div>
 
         <!-- END OF HOME PAGE -->
 
@@ -395,7 +373,7 @@
         <div v-if="productsPage && homePage === false && contactPage === false">
           <div class="container-fluid">
 
-            <h1 class="display-4 ml-5" id="shirts" style="color: #ffff; font-family: Liberation Sans;">T-Shirts</h1>
+            <h1 class="display-5 ml-5 merriweather" id="shirts" style="color: #ffff;">T-Shirts</h1>
             <div class="row m-5">
 
 
@@ -414,6 +392,28 @@
 
             </div>
           </div>
+
+          <!------------------------------------------------------------------------>
+          <div class="container-fluid">
+            <h1 class="display-5 ml-5 merriweather" id="shoes" style="color: #ffff;">Shoes</h1>
+            <div class="row m-5">
+
+              <!-- CARD -->
+              <div v-for="shoe in shoes" class="col-m p-2">
+                <div class="card" style="width: 18rem;" v0>
+                  <img :src="shoe.image" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">{{shoe.name}}</h5>
+                    <p class="card-text">{{shoe.price}}</p>
+                    <a href="#" class="btn btn-olive btn-shadow">Add to Cart</a>
+                  </div>
+                </div>
+              </div>
+              <!-- CARD -->
+
+            </div>
+          </div>
+
         </div>
         <!-- END OF PRODUCTS PAGE-->
 
