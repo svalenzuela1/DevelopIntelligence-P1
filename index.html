@@ -424,11 +424,25 @@
         <!-- CONTACT PAGE -->
         <div v-if="contactPage && homePage === false && productsPage === false">
 
-          <div class="d-flex justify-content-center align-items-center container">
+          <div class="d-flex justify-content-center align-items-center container-fluid">
             <div class="w-50">
               <form class="">
 
                 <!-- FIRST ROW -->
+
+                <div class="form-row">
+                  <div class="col-md-6 mb-3 pt-2 w-100">
+                    <label for="validationCustom02" class="contact-font">Subject</label>
+                    <select class="contact-input" style="width: 100%;" id="">
+                      <option>Select Option</option>
+                      <option value="Refund">Refund</option>
+                      <option value="Shipping Status">Shipping Status</option>
+                      <option value="Defective Item">Defective Item</option>
+                      <option value="Missing Items">Missing Items</option>
+                      <option value="Other">Other</option>
+                    </select>
+                  </div>
+                </div>
                 <div class="form-row">
                   <div class="col-md-6 mb-3">
                     <label for="validationCustom01" class="contact-font">First name</label>
