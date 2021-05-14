@@ -4,9 +4,9 @@ const app = new Vue({
     data: {
         accountCreated: true,
         register: false,
-        loggedIn: true,
-        homePage: false,
-        productsPage: true,
+        loggedIn: false,
+        homePage: true,
+        productsPage: false,
         contactPage: false,
         shirts: [
             {image: 'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/860d2c2d-ee3a-4316-b2a4-bb1bb5488eda/icon-clash-city-sleek-womens-running-tank-s9XV8p.png', name:'Nike Running Tank', price: 55},
@@ -40,10 +40,10 @@ const app = new Vue({
         },
         handleLogin: function(){
             this.loggedIn = true
+            this.homePage = true
         },
         handleLogout: function(){
             this.loggedIn = false
-            this.contactPage = false
         },
         toggleHome: function(){
             this.homePage = true
