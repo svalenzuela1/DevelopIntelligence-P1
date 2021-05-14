@@ -5,10 +5,10 @@ const app = new Vue({
         accountCreated: true,
         register: false,
         loggedIn: true,
-        homePage: true,
-        productsPage: false,
+        homePage: false,
+        productsPage: true,
         contactPage: false,
-        products: [
+        shirts: [
             {image: 'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/860d2c2d-ee3a-4316-b2a4-bb1bb5488eda/icon-clash-city-sleek-womens-running-tank-s9XV8p.png', name:'Nike Running Tank', price: 55},
             {image: 'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/1df2599d-0689-47d3-afbd-629f4461685a/sportswear-womens-boxy-t-shirt-cPPsNj.png', name:'Nike Boxy T-Shirt', price: 35},
             {image: 'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/b37f7031-c366-4bc5-b3e7-42238c6ab43f/sportswear-womens-t-shirt-plus-size-PqMl80.png', name:'Nike T-Shirt', price: 35},
@@ -18,6 +18,9 @@ const app = new Vue({
             {image: 'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/c942b618-e25a-4953-940d-b8bf882959c4/sportswear-nsw-womens-short-sleeve-top-DlDpmf.png', name:'Nike Short-Sleeve Top', price: 55},
             {image: 'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/233540fe-2337-4748-adb2-54be69c2766a/dri-fit-womens-training-tank-0ctG9Q.png', name: 'Nike Training Tank', price: 25},
             {image: 'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/7e4cfb76-479a-4430-9330-fb9d82cbe9af/yoga-luxe-eyelet-womens-shelf-bra-tank-BCpbZ2.png', name:'Nike Shelf Tank', price: 55},
+            {image: 'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/d3e31313-ad9a-444a-93a7-139bb0b90a41/sportswear-womens-t-shirt-rQxr1q.png', name: 'Nike Sports Wear', price: 40},
+            {image: 'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/274e2bb9-6dc1-49f5-88c0-88f1ba983e20/city-sleek-womens-trail-running-tank-5kL8Pk.png', name: 'Nike Trail Running Tank', price: 25},
+            {image: 'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/i1-fbfd98e4-2b03-49c1-9da8-0d5b97cb06c9/sportswear-womens-muscle-tank-QF3zD8.png', name: 'Nike Muscle Tank', price: 30}
         ]
     },
     methods: {
@@ -34,6 +37,7 @@ const app = new Vue({
         },
         handleLogout: function(){
             this.loggedIn = false
+            this.contactPage = false
         },
         toggleHome: function(){
             this.homePage = true

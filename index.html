@@ -54,7 +54,7 @@
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <a class="dropdown-item" href="#" v-on:click="toggleProducts">All</a>
-                  <a class="dropdown-item" href="#">T-Shirts</a>
+                  <a class="dropdown-item" href="#shirts">T-Shirts</a>
                   <a class="dropdown-item" href="#">Shoes</a>
                   <div class="dropdown-divider"></div>
                   <a class="dropdown-item" href="#" type="button" data-toggle="modal" data-target="#exampleModal">Sizing
@@ -181,10 +181,9 @@
           <!-- LOGIN -->
           <div class="login-div bg-white" v-if="accountCreated && register === false">
             <form>
-              <!-- <div class="form-group"> -->
-              <!-- <label for="Username">Username</label> -->
+           
               <div class="input-group mb-3">
-                <!-- <label for="Username">Username</label> -->
+
                 <div class="input-group-prepend">
                   <span class="input-group-text" id="basic-addon1">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -198,13 +197,9 @@
                 <input type="text" placeholder="Username" class="form-control" id="username">
               </div>
 
+              
 
-              <!-- <div class="form-group">
-              <label for="exampleInputPassword1">Password</label>
-              <input type="password" class="form-control" id="password">
-            </div> -->
               <div class="input-group mb-3 ">
-                <!-- <label for="exampleInputPassword1">Password</label> -->
                 <div class="input-group-prepend">
                   <span class="input-group-text">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -399,16 +394,18 @@
         <!-- PRODUCTS PAGE -->
         <div v-if="productsPage && homePage === false && contactPage === false">
           <div class="container-fluid">
+
+            <h1 class="display-4 ml-5" id="shirts" style="color: #ffff; font-family: Liberation Sans;">T-Shirts</h1>
             <div class="row m-5">
 
 
               <!-- CARD -->
-              <div v-for="product in products" class="col-m p-2">
+              <div v-for="shirt in shirts" class="col-m p-2">
                 <div class="card" style="width: 18rem;" v0>
-                  <img :src="product.image" class="card-img-top" alt="...">
+                  <img :src="shirt.image" class="card-img-top" alt="...">
                   <div class="card-body">
-                    <h5 class="card-title">{{product.name}}</h5>
-                    <p class="card-text">{{product.price}}</p>
+                    <h5 class="card-title">{{shirt.name}}</h5>
+                    <p class="card-text">{{shirt.price}}</p>
                     <a href="#" class="btn btn-olive btn-shadow">Add to Cart</a>
                   </div>
                 </div>
@@ -426,7 +423,7 @@
 
           <div class="d-flex justify-content-center align-items-center container-fluid">
             <div class="w-50">
-              <form class="">
+              <form>
 
                 <!-- FIRST ROW -->
 
